@@ -1,0 +1,4 @@
+*.xpi
+*.log
+error_log_*.txt
+.DS_Store

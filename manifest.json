@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Smart Margin Note",
+	"version": "0.1.9",
+	"description": "Create Zotero PDF margin notes that are invisibly bound to the nearest paragraph.",
+	"homepage_url": "https://example.invalid/smart-margin-note",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "smart-margin-note@example.com"
+		}
+	},
+	"applications": {
+		"zotero": {
+			"id": "smart-margin-note@example.com",
+			"update_url": "https://example.com/smart-margin-note/updates.json",
+			"strict_min_version": "7.0",
+			"strict_max_version": "9.99.99"
+		}
+	}
+}

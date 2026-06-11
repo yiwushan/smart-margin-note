@@ -1,0 +1,30 @@
+<vbox id="smart-margin-note-prefs"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	data-search-strings-raw="Smart Margin Note 智能旁批 旁批 颜色 字号 覆盖 提取"
+	onload="if (typeof SmartMarginNotePrefs !== 'undefined') SmartMarginNotePrefs.init(event);">
+	<groupbox class="smart-margin-note-pref-section">
+		<label><html:h2>智能旁批</html:h2></label>
+		<html:div class="smart-margin-note-pref-row">
+			<html:label for="smart-margin-note-text-color">旁批颜色</html:label>
+			<html:input id="smart-margin-note-text-color"
+				type="color"
+				preference="extensions.smartMarginNote.textColor"/>
+		</html:div>
+		<html:div class="smart-margin-note-pref-row">
+			<html:label for="smart-margin-note-font-size">旁批字号</html:label>
+			<html:input id="smart-margin-note-font-size"
+				type="number"
+				min="4"
+				max="48"
+				step="1"
+				preference="extensions.smartMarginNote.fontSize"/>
+		</html:div>
+		<html:div class="smart-margin-note-pref-row smart-margin-note-pref-row-checkbox">
+			<html:input id="smart-margin-note-replace-extraction-note"
+				type="checkbox"
+				preference="extensions.smartMarginNote.replaceExtractionNote"/>
+			<html:label for="smart-margin-note-replace-extraction-note">提取时更新已有“智能旁批”笔记</html:label>
+		</html:div>
+	</groupbox>
+</vbox>

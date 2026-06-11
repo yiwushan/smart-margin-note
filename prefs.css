@@ -1,0 +1,29 @@
+#smart-margin-note-prefs {
+	padding: 12px 0;
+}
+
+#smart-margin-note-prefs .smart-margin-note-pref-section {
+	max-width: 560px;
+}
+
+#smart-margin-note-prefs h2 {
+	font-size: 1.15em;
+	margin: 0 0 14px;
+}
+
+#smart-margin-note-prefs .smart-margin-note-pref-row {
+	align-items: center;
+	display: grid;
+	gap: 12px;
+	grid-template-columns: 150px minmax(120px, 1fr);
+	margin: 10px 0;
+}
+
+#smart-margin-note-prefs .smart-margin-note-pref-row input[type="number"] {
+	max-width: 96px;
+}
+
+#smart-margin-note-prefs .smart-margin-note-pref-row-checkbox {
+	grid-template-columns: auto 1fr;
+	margin-top: 16px;
+}
